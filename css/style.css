@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* UTILS */
+
+.d-flex{
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-beetween{
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.h-100{
+  height: 100%;
+}
+
+.debug{
+  min-height: 200px;
+  border: 1px solid black;
+  background-color: rgba(255, 0, 0, .2);
+}
+
+/* HEADER */
+header{
+  position: fixed;
+  left: 0;
+  right: 0; /* al posto di dare with:100% */
+  background-color: #FA6903;
+  height: 80px;
+  color: white;
+  box-shadow: 0 1px 3px grey;
+  z-index: 999;
+}
+
+header .container{
+  padding: 0 10px;
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header nav ul a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header nav ul a:hover{
+  text-decoration: underline;
+}
+
+header nav.main-menu  a{
+  padding-right: 20px;
+}
+
+header nav{
+  width: 30%;
+}
+
+header nav.social-menu ul{
+  justify-content: flex-end;
+}
+
+header nav.social-menu  a{
+  padding-left: 5px;
+}
+
+header .logo{
+  width: 165px;
+}
+
+/* MAIN */
+main{
+  padding-top: 130px;
+}
+
+main .row .col{
+  width: calc(100% / 3);
+  min-width: 250px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+main .row .col .card .card-image{
+  position: relative;
+  cursor: pointer;
+}
+
+main .row .col .favourite,
+main .row .col .card-badge{
+  position: absolute;
+}
+
+main .card-image:hover .secondary-image{
+  display: block;
+}
+
+main .card-image .secondary-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+main .row .card .favourite{
+  top:10px;
+  right: 0;
+  background-color: white;
+  padding: 20px 15px;
+  font-size: 1.5rem;
+}
+
+main .row .card .card-badge{
+  left: 0;
+  bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+main .row .card .card-badge .badge{
+  padding: 5px 10px;
+}
+
+main .row .card .card-badge .discount{
+  background-color: red;
+}
+
+main .row .card .card-badge .tag{
+  background-color: green;
+  text-transform: capitalize;
+}
+
+main .card .price{
+  font-size: .9rem;
+}
+
+main .card .price span{
+  color: red;
+  font-weight: bold;
+}
